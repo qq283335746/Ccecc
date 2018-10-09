@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="tygasoft-plugin-customplugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>CustomPlugin</name>
+  <js-module name="CustomPlugin" src="www/CustomPlugin.js">
+    <clobbers target="CustomPlugin" />
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="CustomPlugin">
+        <param name="android-package" value="com.tygasoft.plugins.CustomPlugin" />
+      </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml">
+      <!-- 在SDCard中创建与删除文件权限:创建导出文件 -->
+      <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+      <!-- 获取内置sd卡的写权限:写出导出数据 -->
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+      <!-- 获取内置sd卡的读权限:读取导入文件 -->
+      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    </config-file>
+    <!--<config-file parent="/*" target="AndroidManifest.xml"></config-file>-->
+    <source-file src="src/android/CustomPlugin.java" target-dir="src/com/tygasoft/plugins" />
+    <source-file src="src/android/DeviceInfo.java" target-dir="src/com/tygasoft/model" />
+    <source-file src="src/android/Device.java" target-dir="src/com/tygasoft/bll" />
+    <source-file src="src/android/ExcelHelper.java" target-dir="src/com/tygasoft/utility" />
+    <source-file src="src/android/libs/jxl.jar" target-dir="libs" />
+  </platform>
+</plugin>

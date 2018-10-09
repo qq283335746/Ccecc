@@ -1,0 +1,84 @@
+*{
+ font-family:'Microsoft YaHei','微软雅黑' !important;font-size:12px; letter-spacing: 1.2px;
+}
+a {
+ text-decoration:none;color:#444;
+}
+a:link, a:visited,a:hover, a:active {
+ text-decoration:none;color:#444;
+}
+.fl {
+ float:left;
+}
+.fr {
+ float:right;
+}
+.clr {
+ clear: both;display: block;font-size: 0;height: 0;line-height: 0;overflow: hidden;
+}
+.mgt10 {
+ margin-top:10px !important;
+}
+input{
+ border:1px solid #ccc !important;height:30px !important;width:100% !important;
+}
+.f18 {
+ font-size:18px !important;
+}
+.txta {
+ border:1px solid #ccc !important;height:80px;width:100%;resize: none; 
+}
+
+/*自定义*/
+.login .row:first-child {
+ margin-top:20px;
+}
+.login .row {
+ margin-top:10px;
+}
+.fm .row .col {
+ line-height:30px !important;
+}
+.fm .row .col>a:first-child{
+ padding-left:0 !important; margin-left:0 !important;
+}
+.list .ion-ios-arrow-right {
+ font-size:18px;
+}
+
+/*数据网格*/
+.dg-list{
+ background-color:#ccc;padding:10px;
+}
+.dg-list .box{
+ background-color:#FFF;border-radius:10px; margin-bottom:10px;
+}
+.dg-list .box .row{ 
+ border-style: solid; border-width: 0 0 1px 0; border-color: #ccc;
+}
+.dg-list .box>.row{
+ padding-top:5px;padding-bottom:5px; margin-top:0;margin-bottom:0;
+}
+.dg-list .subbox>.row{
+ padding-top:0;padding-bottom:0; margin-top:0;margin-bottom:0;
+}
+
+/*菜单导航*/
+.sideMenu {
+ background-color: #222222;color: #ffffff;
+}
+.sideMenu .row{
+ padding:0;
+}
+.sideMenu .row .col{
+ padding:16px;
+}
+.sideMenu .item, .sideMenu .item-complex {
+ background-color: #222222;color: #ffffff;
+}
+.sideMenu .item-content {
+ background-color: #222222;color: #ffffff;
+}
+.sideMenu .icon {
+ font-size: 18px;
+}

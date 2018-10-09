@@ -1,0 +1,41 @@
+﻿<ion-view view-title="进入盘点">
+    <ion-nav-buttons side="right">
+        <a class="button f18"  href="#/app/Pandian">列表</a>
+    </ion-nav-buttons>
+    <ion-content>
+
+        <div class="fm">
+            <div class="row">
+                <div class="col col-33">盘点任务单：</div>
+                <div class="col col-67">{{ModelData.OrderCode}}</div>
+            </div>
+            <div class="row">
+                <div class="col col-33">盘点人员：</div>
+                <div class="col col-67">
+                    <input type="text" ng-model="ModelData.UserName" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-33">开始时间：</div>
+                <div class="col col-67">
+                    <a ng-click="onDpDate(1)" class="button button-small button-clear button-stable icon-right ion-ios-arrow-down">
+                        {{ModelData.StartDate}}
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-33">截止时间：</div>
+                <div class="col col-67">
+                    <a ng-click="onDpDate(2)" class="button button-small button-clear button-stable icon-right ion-ios-arrow-down">
+                        {{ModelData.EndDate}}
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="onSaveOrderInfo()">开始盘点</button>
+        </div>
+
+    </ion-content>
+</ion-view>

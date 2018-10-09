@@ -1,0 +1,98 @@
+{
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device@~1.1.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-console@~1.0.2"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@~1.2.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-statusbar@~2.1.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "ionic-plugin-keyboard": {
+        "source": {
+            "type": "registry",
+            "id": "ionic-plugin-keyboard@~1.0.8"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-sqlite-storage": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-sqlite-storage@1.5.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-splashscreen@3.1.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-network-information": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-network-information@1.2.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-x-toast": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-x-toast@2.5.2"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.tygasoft.rfidscan": {
+        "source": {
+            "type": "local",
+            "path": "D:\\VS2015\\ApacheCordova\\MyPlugins\\RfidScan14\\RfidScan"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "tygasoft-plugin-customplugin": {
+        "source": {
+            "type": "local",
+            "path": "D:\\VS2015\\ApacheCordova\\MyPlugins\\CustomPlugin1\\CustomPlugin"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "tygasoft-plugin-rfidscan": {
+        "source": {
+            "type": "local",
+            "path": "D:\\VS2015\\ApacheCordova\\MyPlugins\\tygasoft-plugin-rfidscan"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

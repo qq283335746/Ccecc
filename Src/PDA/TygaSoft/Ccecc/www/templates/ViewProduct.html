@@ -1,0 +1,115 @@
+﻿<ion-view view-title="盘点报表数据查询">
+    <ion-content>
+        <div class="fm">
+            <div class="row">
+                <div class="col col-33">盘点计划号：</div>
+                <div class="col col-67">
+                    <input type="text" ng-model="ModelData.OrderCode" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-33">盘点人员：</div>
+                <div class="col col-67">
+                    <input type="text" ng-model="ModelData.UserName" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-33">盘点时间：</div>
+                <div class="col col-67">
+                    <a ng-click="onDpDate(1)" class="button button-small button-clear button-stable icon-right ion-ios-arrow-down">
+                        {{ModelData.StartDate}}
+                    </a>
+                </div>
+            </div>
+            <div class="padding">
+                <button class="button button-block button-positive" ng-click="onSearch()">查询</button>
+            </div>
+        </div>
+        <div class="dg-list">
+            <div class="box" ng-repeat="item in ProductItems">
+                <div class="row">
+                    <div class="col" ng-click="toggleGroup(item)" ng-class="{active: isGroupShown(item)}">
+                        设备编号：{{item.Coded}}
+                        <span class="badge badge-positive fr">{{item.OrderCode? '已盘点':'未盘点'}}</span>
+                    </div>
+                </div>
+                <div class="subbox" ng-show="isGroupShown(item)">
+                    <div class="row">
+                        <div class="col col-33">设备名称：</div>
+                        <div class="col col-67">{{item.Named}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">设备型号：</div>
+                        <div class="col col-67">{{item.SpecModel}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">设备类别：</div>
+                        <div class="col col-67">{{item.DeviceType}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">生产厂家：</div>
+                        <div class="col col-67">{{item.Manufacturer}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">进口/国产：</div>
+                        <div class="col col-67">{{item.ProduceType}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">整机重量(kg)：</div>
+                        <div class="col col-67">{{item.Weight}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">装机功率(KW)：</div>
+                        <div class="col col-67">{{item.Power}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">发动机号：</div>
+                        <div class="col col-67">{{item.EngineCode}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">底盘号：</div>
+                        <div class="col col-67">{{item.ChassisCode}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">车牌号：</div>
+                        <div class="col col-67">{{item.VehicleCode}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">设备原值：</div>
+                        <div class="col col-67">{{item.OriginalValue}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">设备净值：</div>
+                        <div class="col col-67">{{item.NetValue}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">设备技术状态：</div>
+                        <div class="col col-67">{{item.TechStatus}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">车辆状态：</div>
+                        <div class="col col-67">{{item.VehicleStatus}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">租赁状态：</div>
+                        <div class="col col-67">{{item.LeaseStatus}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">管理单位：</div>
+                        <div class="col col-67">{{item.ManageUnit}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">设备所在项目：</div>
+                        <div class="col col-67">{{item.DeviceProject}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box" ng-hide="ProductItems.length > 0">
+                <div class="row">
+                    <div class="col">暂无数据</div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

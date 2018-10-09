@@ -1,0 +1,50 @@
+﻿<ion-view view-title="{{ModelInfo.OrderCode}}">
+    <ion-content>
+
+        <div class="padding button-bar button-clear-border-none">
+            <a class="button" ng-class="btnTabIndex == 0 ? 'button-positive':'button-outline button-clear'" ng-click="onTabSelected(0)">扫描</a>
+            <a class="button" ng-class="btnTabIndex == 1 ? 'button-positive':'button-outline button-clear'" ng-click="onTabSelected(1)">手动</a>
+        </div>
+        <div class="fm">
+            <div class="row">
+                <div class="col col-33">{{btnTabIndex == 0 ? "扫描":"输入"}}条码：</div>
+                <div class="col col-67"><input type="text" ng-model="ModelData.Barcode" ng-change="onBarcodeChanged()" /></div>
+            </div>
+            <div class="padding" ng-show="btnTabIndex == 1">
+                <button class="button button-block button-positive" ng-click="onSure()">确定</button>
+            </div>
+        </div>
+
+        <div class="item item-divider">已盘点</div>
+        <div class="dg-list">
+            <div class="box" ng-repeat="item in PandianProductItems">
+                <div class="row">
+                    <div class="col" ng-click="toggleGroup(item)" ng-class="{active: isGroupShown(item)}">设备编号：{{item.Coded}}</div>
+                </div>
+                <div class="subbox" ng-show="isGroupShown(item)">
+                    <div class="row">
+                        <div class="col">盘点单号：{{item.OrderCode}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">盘点人员：{{item.OrderUserName}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">开始时间：{{item.OrderStartDate}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">截止时间：{{item.OrderEndDate}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">设备技术状态：{{item.TechStatus}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box" ng-hide="PandianProductItems.length > 0">
+                <div class="row">
+                    <div class="col">暂无数据</div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+{
+     "android": {
+         "release": {
+             "keystore": "D:\\com-sw-ccecc.keystore",
+             "storePassword": "sw-ccecc",
+             "alias": "tygasoft",
+             "password" : "sw-ccecc",
+             "keystoreType": ""
+         }
+     }
+ }

@@ -1,0 +1,45 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        },
+        "tygasoft-plugin-customplugin": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        },
+        "tygasoft-plugin-rfidscan": {
+            "PACKAGE_NAME": "com.sw.ccecc"
+        }
+    },
+    "dependent_plugins": {}
+}

@@ -1,0 +1,34 @@
+﻿<ion-view view-title="盘点单列表">
+    <ion-content>
+
+        <div class="dg-list">
+            <div class="box" ng-repeat="item in PandianItems">
+                <div class="row">
+                    <div class="col col-80" ng-click="toggleGroup(item)" ng-class="{active: isGroupShown(item)}">单据：{{item.OrderCode}}</div>
+                    <div class="col col20">
+                        <a ng-click="onRowSelect(item)">
+                            <span class="badge badge-positive">选择</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="subbox" ng-show="isGroupShown(item)">
+                    <div class="row">
+                        <div class="col">操作人：{{item.UserName}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">开始时间：{{item.StartDate}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">截止时间：{{item.EndDate}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box" ng-hide="PandianItems.length > 0">
+                <div class="row">
+                    <div class="col">暂无数据</div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

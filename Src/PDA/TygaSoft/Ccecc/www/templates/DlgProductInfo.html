@@ -1,0 +1,83 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <div class="buttons">
+            <button class="button button-clear" ng-click="onCancelDlgProductInfo()">取消</button>
+        </div>
+        <h1 class="title">{{ProductInfo.Rfid}}</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="row">
+            <div class="col col-33">设备编号：</div>
+            <div class="col col-67">{{ProductInfo.Coded}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">设备名称：</div>
+            <div class="col col-67">{{ProductInfo.Named}}</div> 
+        </div>
+        <div class="row">
+            <div class="col col-33">设备型号：</div>
+            <div class="col col-67">{{ProductInfo.SpecModel}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">设备类别：</div>
+            <div class="col col-67">{{ProductInfo.DeviceType}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">生产厂家：</div>
+            <div class="col col-67">{{ProductInfo.Manufacturer}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">进口/国产：</div>
+            <div class="col col-67">{{ProductInfo.ProduceType}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">整机重量(kg)：</div>
+            <div class="col col-67">{{ProductInfo.Weight}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">装机功率(KW)：</div>
+            <div class="col col-67">{{ProductInfo.Power}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">发动机号：</div>
+            <div class="col col-67">{{ProductInfo.EngineCode}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">底盘号：</div>
+            <div class="col col-67">{{ProductInfo.ChassisCode}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">车牌号：</div>
+            <div class="col col-67">{{ProductInfo.VehicleCode}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">设备原值：</div>
+            <div class="col col-67">{{ProductInfo.OriginalValue}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">设备净值：</div>
+            <div class="col col-67">{{ProductInfo.NetValue}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">设备技术状态：</div>
+            <div class="col col-67">{{ProductInfo.TechStatus}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">车辆状态：</div>
+            <div class="col col-67">{{ProductInfo.VehicleStatus}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">租赁状态：</div>
+            <div class="col col-67">{{ProductInfo.LeaseStatus}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">管理单位：</div>
+            <div class="col col-67">{{ProductInfo.ManageUnit}}</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">设备所在项目：</div>
+            <div class="col col-67">{{ProductInfo.DeviceProject}}</div>
+        </div>
+        
+    </ion-content>
+</ion-modal-view>

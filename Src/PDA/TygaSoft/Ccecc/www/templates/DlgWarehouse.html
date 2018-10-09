@@ -1,0 +1,16 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">选择仓库</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="onCloseWarehouse()">关闭</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-icon-right" ng-repeat="item in WarehouseItems" ng-click="onSelectWarehouse($index)">
+                {{item.Name}}
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

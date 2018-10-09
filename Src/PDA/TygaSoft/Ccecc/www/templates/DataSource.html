@@ -1,0 +1,10 @@
+﻿<ion-view view-title="数据上传下载">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-icon-right" ng-repeat="item in DataItems" href="{{item.Url}}">
+                {{item.Name}}
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
